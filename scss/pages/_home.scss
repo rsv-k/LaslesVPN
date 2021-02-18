@@ -1,0 +1,15 @@
+.stats {
+	display: flex;
+	justify-content: space-between;
+
+	height: 20rem;
+	box-shadow: 0 0.5rem 2rem rgba($color-black, $alpha: 0.1);
+	padding: 7rem;
+
+	&__divider {
+		height: 100%;
+		width: 2px;
+		background-color: #eeeff2;
+		border-radius: 1px;
+	}
+}

@@ -1,0 +1,37 @@
+.statistic {
+	display: flex;
+	align-items: center;
+
+	&__img-box {
+		background-color: $color-white-darker;
+		border-radius: 50%;
+		margin-right: 1.5rem;
+		padding: 2rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__icon {
+		width: 1.7rem;
+		height: 1.9rem;
+		fill: $color-red;
+	}
+
+	span {
+		display: block;
+	}
+
+	&__amount {
+		font-size: 2.5rem;
+		font-weight: 700;
+		line-height: 3rem;
+		color: $color-black;
+	}
+
+	&__objects {
+		color: $color-grey-dark;
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+}
