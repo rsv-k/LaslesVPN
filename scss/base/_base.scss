@@ -13,10 +13,11 @@ html {
 
 .container {
 	padding: 5.6rem 0;
-	margin: 0 auto;
-	width: $width-desktop;
 	display: grid;
-	grid-template-columns: [center-start] repeat(12, 1fr) [center-end];
+	grid-template-columns:
+		minmax(6rem, 1fr)
+		[center-start] repeat(12, minmax(min-content, 12rem)) [center-end]
+		minmax(6rem, 1fr);
 	grid-row-gap: $grid-row-gap;
 
 	& > * {
