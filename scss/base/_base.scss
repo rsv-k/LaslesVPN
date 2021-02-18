@@ -10,3 +10,16 @@ html {
 	font-size: 62.5%;
 	box-sizing: border-box;
 }
+
+.container {
+	padding: 5.6rem 0;
+	margin: 0 auto;
+	width: $width-desktop;
+	display: grid;
+	grid-template-columns: [center-start] repeat(12, 1fr) [center-end];
+	grid-row-gap: $grid-row-gap;
+
+	& > * {
+		grid-column: center-start / center-end;
+	}
+}
