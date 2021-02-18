@@ -16,7 +16,10 @@ html {
 	display: grid;
 	grid-template-columns:
 		minmax(6rem, 1fr)
-		[center-start] repeat(12, minmax(min-content, 12rem)) [center-end]
+		[center-start] repeat(
+			12,
+			[col-start] minmax(min-content, 12rem) [col-end]
+		) [center-end]
 		minmax(6rem, 1fr);
 	grid-row-gap: $grid-row-gap;
 

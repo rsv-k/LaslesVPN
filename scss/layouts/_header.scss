@@ -1,7 +1,6 @@
 .header {
 	display: flex;
 	justify-content: space-between;
-	flex-wrap: wrap;
 
 	&__link {
 		color: $color-grey-dark;
@@ -12,5 +11,10 @@
 			font-weight: 500;
 			color: $color-black;
 		}
+	}
+
+	&__nav {
+		display: flex;
+		align-items: center;
 	}
 }

@@ -1,3 +1,23 @@
 .hero {
-	background-color: orange;
+	display: grid;
+	grid-template-columns: repeat(10, [col-start] 1fr [col-end]);
+
+	&__left {
+		grid-column: col-start 1 / col-end 4;
+	}
+
+	&__paragraph {
+		margin: 4rem 0;
+	}
+
+	&__right {
+		grid-column: col-start 5 / col-end 10;
+		height: 25vw;
+		text-align: center;
+	}
+
+	&__img {
+		height: 100%;
+		object-fit: cover;
+	}
 }

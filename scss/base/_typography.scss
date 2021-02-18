@@ -4,3 +4,15 @@ body {
 	font-size: $default-font-size-regular;
 	font-weight: 400;
 }
+
+.heading-primary {
+	font-size: 5rem;
+	line-height: 7rem;
+	font-weight: 500;
+	color: $color-black;
+}
+
+.paragraph {
+	line-height: 3rem;
+	color: $color-grey-dark;
+}
