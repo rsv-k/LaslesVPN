@@ -1,0 +1,27 @@
+.list {
+	list-style-type: none;
+
+	&__item {
+		display: flex;
+		align-items: center;
+
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&__icon {
+		width: 2.1rem;
+		height: 2.1rem;
+		margin-right: 1rem;
+		text-align: center;
+
+		fill: $color-green;
+	}
+
+	&__text {
+		font-size: $default-font-size-small;
+		color: $color-black;
+		line-height: 3rem;
+	}
+}

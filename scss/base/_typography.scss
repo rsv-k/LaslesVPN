@@ -12,7 +12,15 @@ body {
 	color: $color-black;
 }
 
+.heading-secondary {
+	font-size: 3.5rem;
+	line-height: 5rem;
+	font-weight: 500;
+	color: $color-black;
+}
+
 .paragraph {
 	line-height: 3rem;
 	color: $color-grey-dark;
+	margin: 4rem 0;
 }

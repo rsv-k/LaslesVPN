@@ -1,0 +1,49 @@
+.plan {
+	display: inline-block;
+	padding: 5rem;
+	border: 2px solid #dddddd;
+	border-radius: 5px;
+	transition: border 0.2s;
+	height: 76rem;
+	width: 33rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&:hover {
+		border: 2px solid $color-red;
+	}
+
+	&__img-box {
+		width: 14.5rem;
+		height: 16.5rem;
+		margin: 0 auto;
+	}
+
+	&__img {
+		object-fit: cover;
+		width: 100%;
+	}
+
+	&__name {
+		margin: 3rem 0;
+		color: $color-black;
+		font-weight: 500;
+		font-size: 1.8rem;
+		line-height: 3rem;
+	}
+
+	&__price {
+		font-size: 2.5rem;
+		line-height: 3rem;
+		font-weight: 500;
+		color: $color-black;
+		margin-bottom: 3rem;
+	}
+
+	ul {
+		margin: 0 auto;
+		display: inline-block;
+	}
+}

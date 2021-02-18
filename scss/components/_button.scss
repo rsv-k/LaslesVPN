@@ -3,9 +3,15 @@
 	color: $color-red;
 	border-radius: 30px;
 	border: 1px solid currentColor;
-	padding: 1rem 4rem;
+	padding: 1rem 6rem;
 	text-decoration: none;
 	font-weight: 500;
+	transition: all 0.2s;
+
+	&:hover {
+		background-color: $color-red;
+		color: $color-white;
+	}
 }
 
 .button-filled {
