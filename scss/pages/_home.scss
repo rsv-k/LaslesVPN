@@ -69,6 +69,58 @@
 	&__img {
 		width: 100%;
 		height: 100%;
-		object-fit: contain;
+		object-fit: cover;
+	}
+}
+
+.testimonials {
+	display: grid;
+	grid-template-columns: repeat(12, [col-start] 1fr [col-end]);
+
+	&__text {
+		grid-row: 1;
+		grid-column: col-start 5 / col-end 8;
+	}
+
+	&__slider {
+		margin-top: 2rem;
+		grid-row: 2;
+		grid-column: col-start 1 / col-end 12;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		align-content: flex-start;
+	}
+
+	&__actions {
+		margin-top: 5rem;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list {
+		align-self: flex-end;
+		display: flex;
+	}
+
+	&__item {
+		cursor: pointer;
+		list-style-type: none;
+		padding: 0.6rem;
+		border-radius: 50%;
+		background-color: #dde0e4;
+
+		&:not(:last-child) {
+			margin-right: 1rem;
+		}
+
+		&--active {
+			padding: 0.6rem 1.5rem;
+			border-radius: 10px;
+			background-color: $color-red;
+		}
 	}
 }

@@ -24,3 +24,18 @@
 	padding: 1rem 6rem;
 	box-shadow: 0 0.5rem 2rem rgba($color-red, $alpha: 0.2);
 }
+
+.button-circle {
+	text-decoration: none;
+	border-radius: 50%;
+	font-size: 2.5rem;
+	padding: 1.5rem 1.6rem;
+	border: 1px solid $color-red;
+	color: $color-red;
+	transition: all 0.2s;
+
+	&:hover {
+		background-color: $color-red;
+		color: $color-white;
+	}
+}

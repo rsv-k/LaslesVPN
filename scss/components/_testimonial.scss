@@ -1,0 +1,64 @@
+.testimonial {
+	width: 40rem;
+	height: 23rem;
+
+	border-radius: 10px;
+	border: 2px solid $color-white-border;
+	padding: 3.7rem;
+
+	display: grid;
+	grid-template-columns: min-content 1fr min-content;
+	align-content: start;
+	grid-row-gap: 1rem;
+
+	transition: all 0.2s;
+
+	&__img-box {
+		width: 5rem;
+		height: 5rem;
+	}
+
+	&__img {
+		height: 100%;
+		object-fit: cover;
+	}
+
+	&__name {
+		font-weight: 500;
+		font-size: 1.8rem;
+		color: $color-black;
+	}
+
+	&__location {
+		font-weight: 400;
+		font-size: 1.4rem;
+		color: $color-grey-dark;
+	}
+
+	&__person-info {
+		line-height: 2rem;
+		margin-left: 2rem;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+
+	&__amount {
+		color: $color-black;
+		margin-right: 1.5rem;
+	}
+
+	&__score {
+		display: flex;
+		align-items: center;
+	}
+
+	&__text {
+		grid-column: 1 / -1;
+		color: $color-black;
+	}
+
+	&:hover {
+		border: 2px solid $color-red;
+	}
+}
