@@ -1,0 +1,49 @@
+.footer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+
+	&__left {
+		grid-column: 1 / 2;
+	}
+
+	&__icon {
+		fill: $color-red;
+
+		&:not(:last-child) {
+			margin-right: 1.5rem;
+		}
+	}
+
+	&__copyright {
+		color: #afb5c0;
+	}
+
+	&__right {
+		grid-column: 3 / -1;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__list {
+		list-style-type: none;
+		text-decoration: none;
+	}
+
+	&__item {
+		color: $color-grey-dark;
+		&:not(:last-child) {
+			margin-bottom: 1.5rem;
+		}
+
+		a {
+			text-decoration: none;
+			color: $color-grey-dark;
+		}
+	}
+
+	&__item--title {
+		font-weight: 500;
+		font-size: 1.8rem;
+		color: $color-black;
+	}
+}
