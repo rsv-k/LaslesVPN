@@ -124,3 +124,29 @@
 		}
 	}
 }
+
+.cta {
+	height: 23.3rem;
+	box-shadow: 0 0.5rem 2rem rgba($color-black, $alpha: 0.2);
+	padding: 7rem;
+
+	display: flex;
+	justify-content: space-between;
+
+	&__text {
+		max-width: 37.2rem;
+
+		h2 {
+			line-height: 3.5rem;
+		}
+
+		p {
+			margin: 1rem 0;
+		}
+	}
+
+	&__button {
+		align-self: center;
+		grid-column: -1;
+	}
+}
